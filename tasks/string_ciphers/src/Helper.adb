@@ -17,4 +17,16 @@ package body Helper is
    end Caesar_Cipher;
 
 
+   procedure Atbash_Cipher (Word : in out String) is
+   begin
+      for I in Word'First .. Word'Last loop
+         if Word(I) in 'A' .. 'Z' then
+            Word(I) := Character'Val(Character'Pos('A') + (25 - (Character'Pos(Word(I)) - Character'Pos('A'))) mod 26);
+         elsif Word(I) in 'a' .. 'z' then
+            Word(I) := Character'Val(Character'Pos('a') + (25 - (Character'Pos(Word(I)) - Character'Pos('a'))) mod 26);
+         end if;
+      end loop;
+
+   end Atbash_Cipher;
+
 end Helper;
