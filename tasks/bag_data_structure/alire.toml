@@ -1,0 +1,11 @@
+name = "bag_data_structure"
+description = ""
+version = "0.1.0-dev"
+
+authors = ["Juba"]
+maintainers = ["Juba <jubakikvadze665@gmail.com>"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
+website = ""
+tags = []
+
+executables = ["bag_data_structure"]
